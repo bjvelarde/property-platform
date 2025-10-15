@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1760514716210,
+      "tag": "0000_curly_next_avengers",
+      "breakpoints": true
+    }
+  ]
+}
