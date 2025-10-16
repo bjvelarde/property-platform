@@ -6,19 +6,20 @@ import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
 import * as schema from './schema';
 
-const connectionString = process.env.SUPABASE_URL;
+// Use DATABASE_URL instead of SUPABASE_URL
+const connectionString = process.env.DATABASE_URL;
 
 if (!connectionString) {
-    console.error('❌ SUPABASE_URL is not set');
-    throw new Error('SUPABASE_URL environment variable is not set');
+    console.error('❌ DATABASE_URL is not set');
+    throw new Error('DATABASE_URL environment variable is not set');
 }
 
-console.log('🔗 Connecting to Southeast Asia Supabase...');
+console.log('🔗 Connecting to database...');
 
 const client = postgres(connectionString, {
     max: 1,
     idle_timeout: 20,
-    ssl: 'require', // Important for Supabase
+    ssl: 'require',
 });
 
 export const db = drizzle(client, { schema });
