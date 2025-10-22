@@ -1,26 +1,18 @@
 // scripts/test-db.ts
-import { config } from 'dotenv';
-
-// Load environment variables from .env.local
-config({ path: '.env.local' });
-
 import { db } from '../lib/db';
+import { users } from '../lib/db/schema';
 
-async function testConnection() {
-    try {
-        console.log('🧪 Testing database connection...');
-        console.log('SUPABASE_URL:', process.env.SUPABASE_URL ? '✓ Set' : '✗ Missing');
+async function testDB() {
+  console.log('Testing database connection...');
 
-        const result = await db.execute('SELECT 1 as connection_test');
-        console.log('✅ Database connection successful!');
-
-        return true;
-    } catch (error) {
-        console.error('❌ Database connection failed:', error);
-        return false;
-    }
+  try {
+    const result = await db.select().from(users);
+    console.log('✅ Database test successful!');
+    console.log('Users found:', result.length);
+    console.log('Sample user data:', result[0]);
+  } catch (error) {
+    console.error('❌ Database test failed:', error);
+  }
 }
 
-testConnection().then(success => {
-    process.exit(success ? 0 : 1);
-});
+testDB();

@@ -1,12 +1,9 @@
 import { Header } from '@/components/layout/header';
 import { AuthProvider } from '@/components/providers/auth-provider';
 import { TRPCProvider } from '@/components/providers/trpc-provider';
+import './globals.css';
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>

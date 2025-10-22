@@ -29,16 +29,38 @@ export const signOut = async () => {
 };
 
 export const handlers = {
-    GET: (req: Request) => {
+    GET: () => {
         return new Response(JSON.stringify({ user: null }), {
             status: 200,
             headers: { 'Content-Type': 'application/json' },
         });
     },
-    POST: (req: Request) => {
+    POST: () => {
         return new Response(JSON.stringify({ user: null }), {
             status: 200,
             headers: { 'Content-Type': 'application/json' },
         });
     },
 };
+
+// Add this to your existing auth-mock.ts file
+
+// Mock user storage (in real app, this would be in database)
+let mockUser = {
+    id: '1',
+    email: 'demo@example.com',
+    name: 'Demo User',
+    role: null as string | null,
+}
+
+export const mockUpdateUserRole = async (role: string) => {
+    // Simulate API call delay
+    await new Promise(resolve => setTimeout(resolve, 500))
+
+    mockUser.role = role
+    console.log(`Mock: Updated user role to ${role}`)
+
+    return { success: true, user: mockUser }
+}
+
+export const getMockUser = () => mockUser
