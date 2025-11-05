@@ -1,0 +1,115 @@
+{
+  "common": {
+    "search": "검색",
+    "loading": "로딩 중...",
+    "error": "오류",
+    "success": "성공",
+    "save": "저장",
+    "cancel": "취소",
+    "delete": "삭제",
+    "edit": "편집",
+    "submit": "제출",
+    "next": "다음",
+    "previous": "이전",
+    "confirm": "확인"
+  },
+  "HomePage": {
+    "title": "부동산 플랫폼",
+    "description": "완벽한 부동산을 찾아보세요",
+    "roleHint": "둘러보기를 시작하면 예비 임차인이 됩니다 — 여정은 한 번의 검색으로 시작됩니다."
+  },
+  "Navigation": {
+    "home": "홈",
+    "dashboard": "대시보드",
+    "properties": "부동산"
+  },
+  "LanguageSelector": {
+    "placeholder": "언어 선택"
+  },
+  "navigation": {
+    "home": "홈",
+    "properties": "매물",
+    "dashboard": "대시보드",
+    "favorites": "즐겨찾기",
+    "messages": "메시지",
+    "language": "언어"
+  },
+  "home": {
+    "title": "완벽한 부동산 찾기",
+    "subtitle": "대만 전역의 아파트, 주택, 상업 공간을 발견하세요",
+    "findProperties": "매물 찾기",
+    "goToDashboard": "대시보드로 이동"
+  },
+  "property": {
+    "search": {
+      "title": "완벽한 부동산 찾기",
+      "subtitle": "아파트, 주택, 상업 공간을 발견하세요",
+      "resultsWillAppearHere": "검색 결과가 여기에 표시됩니다",
+      "placeholder": "매물 검색...",
+      "location": "위치",
+      "selectLocation": "위치 선택",
+      "minPrice": "최저 가격",
+      "maxPrice": "최고 가격",
+      "propertyType": "매물 유형",
+      "selectPropertyType": "매물 유형 선택"
+    },
+    "locations": {
+      "taipei": "타이베이",
+      "newTaipei": "신베이",
+      "taoyuan": "타오위안",
+      "taichung": "타이중",
+      "kaohsiung": "가오슝"
+    },
+    "propertyTypes": {
+      "any": "모든 유형",
+      "apartment": "아파트",
+      "house": "주택",
+      "studio": "스튜디오",
+      "commercial": "상업 공간"
+    }
+  },
+  "dashboard": {
+    "title": "대시보드",
+    "subtitle": "매물, 즐겨찾기, 메시지를 관리하세요",
+    "sections": {
+      "properties": "매물",
+      "manageProperties": "등록한 매물 관리",
+      "favorites": "즐겨찾기",
+      "viewFavorites": "즐겨찾기한 매물 보기",
+      "messages": "메시지",
+      "manageMessages": "대화 관리"
+    }
+  },
+  "lease": {
+    "title": "임대 계약",
+    "subtitle": "임대 계약서를 작성 중입니다",
+    "sections": {
+      "tenantInfo": "임차인 정보",
+      "leaseDetails": "임대 세부 정보"
+    },
+    "form": {
+      "fullName": "전체 이름",
+      "fullNamePlaceholder": "전체 이름을 입력하세요",
+      "email": "이메일 주소",
+      "emailPlaceholder": "이메일을 입력하세요",
+      "phoneNumber": "전화번호",
+      "phoneNumberPlaceholder": "전화번호를 입력하세요",
+      "leaseDuration": "임대 기간",
+      "selectDuration": "기간 선택",
+      "months": "개월",
+      "monthlyRent": "월 임대료",
+      "securityDeposit": "보증금",
+      "startDate": "임대 시작일",
+      "agreeToTerms": "본 임대 계약의 약관 및 조건에 동의합니다",
+      "signLease": "계약서 서명"
+    },
+    "errors": {
+      "fullNameRequired": "전체 이름을 입력해주세요",
+      "emailRequired": "이메일을 입력해주세요",
+      "emailInvalid": "유효한 이메일 주소를 입력해주세요",
+      "rentRequired": "월 임대료를 입력해주세요",
+      "agreeToTermsRequired": "약관 및 조건에 동의해야 합니다",
+      "submissionFailed": "계약서 서명에 실패했습니다. 다시 시도해주세요"
+    }
+  }
+}

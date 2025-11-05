@@ -10,6 +10,10 @@ export default defineConfig({
     setupFiles: ['./lib/test/setup.ts'],
     include: ['**/*.test.{ts,tsx}'],
     globals: true,
+    coverage: {
+      reporter: ['text', 'json', 'html'],
+      exclude: ['node_modules/', 'lib/test/setup.ts'],
+    },
   },
   resolve: {
     alias: {

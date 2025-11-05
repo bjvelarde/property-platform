@@ -1,0 +1,115 @@
+{
+  "common": {
+    "search": "Search",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "submit": "Submit",
+    "next": "Next",
+    "previous": "Previous",
+    "confirm": "Confirm"
+  },
+  "HomePage": {
+    "title": "Property Platform",
+    "description": "Find your perfect property",
+    "roleHint": "Start browsing to become a Prospect — your journey begins with a single search."
+  },
+  "Navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "properties": "Properties"
+  },
+  "LanguageSelector": {
+    "placeholder": "Select language"
+  },
+  "navigation": {
+    "home": "Home",
+    "properties": "Properties",
+    "dashboard": "Dashboard",
+    "favorites": "Favorites",
+    "messages": "Messages",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Find Your Perfect Property",
+    "subtitle": "Discover apartments, houses, and commercial spaces across Taiwan",
+    "findProperties": "Find Properties",
+    "goToDashboard": "Go to Dashboard"
+  },
+  "property": {
+    "search": {
+      "title": "Find Your Perfect Property",
+      "subtitle": "Discover apartments, houses, and commercial spaces",
+      "resultsWillAppearHere": "Search results will appear here",
+      "placeholder": "Search for properties...",
+      "location": "Location",
+      "selectLocation": "Select location",
+      "minPrice": "Min Price",
+      "maxPrice": "Max Price",
+      "propertyType": "Property Type",
+      "selectPropertyType": "Select property type"
+    },
+    "locations": {
+      "taipei": "Taipei",
+      "newTaipei": "New Taipei",
+      "taoyuan": "Taoyuan",
+      "taichung": "Taichung",
+      "kaohsiung": "Kaohsiung"
+    },
+    "propertyTypes": {
+      "any": "Any Type",
+      "apartment": "Apartment",
+      "house": "House",
+      "studio": "Studio",
+      "commercial": "Commercial"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Manage your properties, favorites, and messages",
+    "sections": {
+      "properties": "Properties",
+      "manageProperties": "Manage your listed properties",
+      "favorites": "Favorites",
+      "viewFavorites": "View your favorite properties",
+      "messages": "Messages",
+      "manageMessages": "Manage your conversations"
+    }
+  },
+  "lease": {
+    "title": "Lease Agreement",
+    "subtitle": "You are signing a lease for",
+    "sections": {
+      "tenantInfo": "Tenant Information",
+      "leaseDetails": "Lease Details"
+    },
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "phoneNumber": "Phone Number",
+      "phoneNumberPlaceholder": "Enter your phone number",
+      "leaseDuration": "Lease Duration",
+      "selectDuration": "Select duration",
+      "months": "months",
+      "monthlyRent": "Monthly Rent",
+      "securityDeposit": "Security Deposit",
+      "startDate": "Lease Start Date",
+      "agreeToTerms": "I agree to the terms and conditions of this lease agreement",
+      "signLease": "Sign Lease"
+    },
+    "errors": {
+      "fullNameRequired": "Full name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "rentRequired": "Monthly rent is required",
+      "agreeToTermsRequired": "You must agree to the terms and conditions",
+      "submissionFailed": "Failed to sign lease. Please try again."
+    }
+  }
+}

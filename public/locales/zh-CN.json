@@ -1,0 +1,115 @@
+{
+  "common": {
+    "search": "搜索",
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "submit": "提交",
+    "next": "下一步",
+    "previous": "上一步",
+    "confirm": "确认"
+  },
+  "HomePage": {
+    "title": "房地产平台",
+    "description": "寻找理想的房产",
+    "roleHint": "开始浏览即可成为潜在租户——您的旅程从一次搜索开始。"
+  },
+  "Navigation": {
+    "home": "首页",
+    "dashboard": "仪表板",
+    "properties": "物业"
+  },
+  "LanguageSelector": {
+    "placeholder": "选择语言"
+  },
+  "navigation": {
+    "home": "首页",
+    "properties": "房源",
+    "dashboard": "仪表板",
+    "favorites": "收藏",
+    "messages": "消息",
+    "language": "语言"
+  },
+  "home": {
+    "title": "寻找理想房源",
+    "subtitle": "探索台湾各地的公寓、房屋和商业空间",
+    "findProperties": "寻找房源",
+    "goToDashboard": "前往仪表板"
+  },
+  "property": {
+    "search": {
+      "title": "寻找理想房源",
+      "subtitle": "探索公寓、房屋和商业空间",
+      "resultsWillAppearHere": "搜索结果将显示在此处",
+      "placeholder": "搜索房源...",
+      "location": "地点",
+      "selectLocation": "选择地点",
+      "minPrice": "最低价格",
+      "maxPrice": "最高价格",
+      "propertyType": "房源类型",
+      "selectPropertyType": "选择房源类型"
+    },
+    "locations": {
+      "taipei": "台北市",
+      "newTaipei": "新北市",
+      "taoyuan": "桃园市",
+      "taichung": "台中市",
+      "kaohsiung": "高雄市"
+    },
+    "propertyTypes": {
+      "any": "任何类型",
+      "apartment": "公寓",
+      "house": "房屋",
+      "studio": "套房",
+      "commercial": "商业空间"
+    }
+  },
+  "dashboard": {
+    "title": "仪表板",
+    "subtitle": "管理您的房源、收藏和消息",
+    "sections": {
+      "properties": "房源",
+      "manageProperties": "管理您的房源列表",
+      "favorites": "收藏",
+      "viewFavorites": "查看您收藏的房源",
+      "messages": "消息",
+      "manageMessages": "管理您的对话"
+    }
+  },
+  "lease": {
+    "title": "租赁合同",
+    "subtitle": "您正在签署租约",
+    "sections": {
+      "tenantInfo": "租客信息",
+      "leaseDetails": "租约详情"
+    },
+    "form": {
+      "fullName": "全名",
+      "fullNamePlaceholder": "输入您的全名",
+      "email": "电子邮件",
+      "emailPlaceholder": "输入您的电子邮件",
+      "phoneNumber": "电话号码",
+      "phoneNumberPlaceholder": "输入您的电话号码",
+      "leaseDuration": "租期",
+      "selectDuration": "选择租期",
+      "months": "个月",
+      "monthlyRent": "月租金",
+      "securityDeposit": "押金",
+      "startDate": "租约开始日期",
+      "agreeToTerms": "我同意本租赁合同的条款和条件",
+      "signLease": "签署租约"
+    },
+    "errors": {
+      "fullNameRequired": "请输入全名",
+      "emailRequired": "请输入电子邮件",
+      "emailInvalid": "请输入有效的电子邮件地址",
+      "rentRequired": "请输入月租金",
+      "agreeToTermsRequired": "您必须同意条款和条件",
+      "submissionFailed": "签署租约失败，请重试"
+    }
+  }
+}

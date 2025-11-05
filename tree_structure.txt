@@ -1,0 +1,210 @@
+.
+├── README.md
+├── app
+│   ├── [locale]
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── api
+│   │   ├── auth
+│   │   │   └── [...nextauth]
+│   │   │       └── route.ts
+│   │   ├── debug-env
+│   │   │   └── route.ts
+│   │   └── trpc
+│   │       └── [trpc]
+│   │           └── route.ts
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components
+│   ├── contact
+│   ├── dashboard
+│   ├── language-selector.tsx
+│   ├── property
+│   ├── search
+│   └── ui
+│       ├── button.tsx
+│       ├── card.tsx
+│       ├── input.tsx
+│       ├── link.tsx
+│       └── select.tsx
+├── components.json
+├── drizzle
+│   ├── 0000_curly_next_avengers.sql
+│   ├── 0001_mute_arclight.sql
+│   ├── 0002_fat_vector.sql
+│   └── meta
+│       ├── 0000_snapshot.json
+│       ├── 0001_snapshot.json
+│       ├── 0002_snapshot.json
+│       └── _journal.json
+├── drizzle.config.ts
+├── eslint.config.mjs
+├── lib
+│   ├── auth-mock.ts
+│   ├── auth.ts
+│   ├── db
+│   │   ├── index.ts
+│   │   └── schema.ts
+│   ├── favorites-utils.ts
+│   ├── i18n
+│   │   ├── request.ts
+│   │   └── routing.ts
+│   ├── mock-data.ts
+│   ├── property-mock-data.ts
+│   ├── property-types.ts
+│   ├── role-acquisition.ts
+│   ├── test
+│   │   └── setup.ts
+│   ├── test-nextauth.ts
+│   ├── tests
+│   │   ├── components
+│   │   │   ├── contact
+│   │   │   ├── dashboard
+│   │   │   ├── property
+│   │   │   └── search
+│   │   ├── hooks
+│   │   └── utils
+│   ├── trpc
+│   │   ├── client.ts
+│   │   ├── context.ts
+│   │   ├── index.ts
+│   │   └── routers
+│   │       ├── auth.ts
+│   │       └── index.ts
+│   └── utils.ts
+├── middleware.ts
+├── next-env.d.ts
+├── next.config.ts
+├── node_modules
+│   ├── @auth
+│   │   └── supabase-adapter -> ../.pnpm/@auth+supabase-adapter@1.11.0_@supabase+supabase-js@2.75.0/node_modules/@auth/supabase-adapter
+│   ├── @eslint
+│   │   ├── eslintrc -> ../.pnpm/@eslint+eslintrc@3.3.1/node_modules/@eslint/eslintrc
+│   │   └── js -> ../.pnpm/@eslint+js@9.37.0/node_modules/@eslint/js
+│   ├── @hookform
+│   │   └── resolvers -> ../.pnpm/@hookform+resolvers@5.2.2_react-hook-form@7.65.0_react@19.1.0_/node_modules/@hookform/resolvers
+│   ├── @radix-ui
+│   │   ├── react-accordion -> ../.pnpm/@radix-ui+react-accordion@1.2.12_@types+react-dom@19.2.2_@types+react@19.2.2__@types+re_cb2d13e760f34a8f6b03945db15c38c2/node_modules/@radix-ui/react-accordion
+│   │   ├── react-alert-dialog -> ../.pnpm/@radix-ui+react-alert-dialog@1.1.15_@types+react-dom@19.2.2_@types+react@19.2.2__@types_4cb29a85f07380d4343b3c9d71d5494e/node_modules/@radix-ui/react-alert-dialog
+│   │   ├── react-aspect-ratio -> ../.pnpm/@radix-ui+react-aspect-ratio@1.1.7_@types+react-dom@19.2.2_@types+react@19.2.2__@types+_ec28d0142d6fc139cf46b6e423ae855f/node_modules/@radix-ui/react-aspect-ratio
+│   │   ├── react-avatar -> ../.pnpm/@radix-ui+react-avatar@1.1.10_@types+react-dom@19.2.2_@types+react@19.2.2__@types+react_2445b63ce57085529aafa0302e8de821/node_modules/@radix-ui/react-avatar
+│   │   ├── react-checkbox -> ../.pnpm/@radix-ui+react-checkbox@1.3.3_@types+react-dom@19.2.2_@types+react@19.2.2__@types+reac_23f6e50a4464b0a7d8392e6092fe2e49/node_modules/@radix-ui/react-checkbox
+│   │   ├── react-collapsible -> ../.pnpm/@radix-ui+react-collapsible@1.1.12_@types+react-dom@19.2.2_@types+react@19.2.2__@types+_eb15369887211df80b122571d432b6f2/node_modules/@radix-ui/react-collapsible
+│   │   ├── react-context-menu -> ../.pnpm/@radix-ui+react-context-menu@2.2.16_@types+react-dom@19.2.2_@types+react@19.2.2__@types_3cd04421882ee2b6371fdefa9a85c7d5/node_modules/@radix-ui/react-context-menu
+│   │   ├── react-dialog -> ../.pnpm/@radix-ui+react-dialog@1.1.15_@types+react-dom@19.2.2_@types+react@19.2.2__@types+react_417893125081af43683ec64a0fe5eda3/node_modules/@radix-ui/react-dialog
+│   │   ├── react-dropdown-menu -> ../.pnpm/@radix-ui+react-dropdown-menu@2.1.16_@types+react-dom@19.2.2_@types+react@19.2.2__@type_958d1c995e1a02d79cfebe28efb4b249/node_modules/@radix-ui/react-dropdown-menu
+│   │   ├── react-hover-card -> ../.pnpm/@radix-ui+react-hover-card@1.1.15_@types+react-dom@19.2.2_@types+react@19.2.2__@types+r_73474ca7010d625203a79733c19d0c76/node_modules/@radix-ui/react-hover-card
+│   │   ├── react-label -> ../.pnpm/@radix-ui+react-label@2.1.7_@types+react-dom@19.2.2_@types+react@19.2.2__@types+react@1_b958d6216ad3c1a3b87d693190a71dc0/node_modules/@radix-ui/react-label
+│   │   ├── react-menubar -> ../.pnpm/@radix-ui+react-menubar@1.1.16_@types+react-dom@19.2.2_@types+react@19.2.2__@types+reac_8cf794756ab987cc96f3c8b4b8057b06/node_modules/@radix-ui/react-menubar
+│   │   ├── react-navigation-menu -> ../.pnpm/@radix-ui+react-navigation-menu@1.2.14_@types+react-dom@19.2.2_@types+react@19.2.2__@ty_b2664cbdd5a6ba8613e944013a91b163/node_modules/@radix-ui/react-navigation-menu
+│   │   ├── react-popover -> ../.pnpm/@radix-ui+react-popover@1.1.15_@types+react-dom@19.2.2_@types+react@19.2.2__@types+reac_9b3b0157596580b66156061d59e62748/node_modules/@radix-ui/react-popover
+│   │   ├── react-progress -> ../.pnpm/@radix-ui+react-progress@1.1.7_@types+react-dom@19.2.2_@types+react@19.2.2__@types+reac_50ee9dbcb8542c1012c2142ea50f19c5/node_modules/@radix-ui/react-progress
+│   │   ├── react-radio-group -> ../.pnpm/@radix-ui+react-radio-group@1.3.8_@types+react-dom@19.2.2_@types+react@19.2.2__@types+r_455f0354795269e050306d3032c01ed6/node_modules/@radix-ui/react-radio-group
+│   │   ├── react-scroll-area -> ../.pnpm/@radix-ui+react-scroll-area@1.2.10_@types+react-dom@19.2.2_@types+react@19.2.2__@types+_6fe8b5c1ce4eef9fd38ba04129e07130/node_modules/@radix-ui/react-scroll-area
+│   │   ├── react-select -> ../.pnpm/@radix-ui+react-select@2.2.6_@types+react-dom@19.2.2_@types+react@19.2.2__@types+react@_210d18254cc587f0abf6fead9ec4977f/node_modules/@radix-ui/react-select
+│   │   ├── react-separator -> ../.pnpm/@radix-ui+react-separator@1.1.7_@types+react-dom@19.2.2_@types+react@19.2.2__@types+rea_db535cab9e7cad0382803a4e46801d9b/node_modules/@radix-ui/react-separator
+│   │   ├── react-slider -> ../.pnpm/@radix-ui+react-slider@1.3.6_@types+react-dom@19.2.2_@types+react@19.2.2__@types+react@_6fa1d6bd8dfa60830c24fd928cfdf6d9/node_modules/@radix-ui/react-slider
+│   │   ├── react-slot -> ../.pnpm/@radix-ui+react-slot@1.2.3_@types+react@19.2.2_react@19.1.0/node_modules/@radix-ui/react-slot
+│   │   ├── react-switch -> ../.pnpm/@radix-ui+react-switch@1.2.6_@types+react-dom@19.2.2_@types+react@19.2.2__@types+react@_1b8d0a83ed7171a19ecd9a55a4134073/node_modules/@radix-ui/react-switch
+│   │   ├── react-tabs -> ../.pnpm/@radix-ui+react-tabs@1.1.13_@types+react-dom@19.2.2_@types+react@19.2.2__@types+react@1_8d6a7e8d04ce4af29ef4e1b5e44fe2f0/node_modules/@radix-ui/react-tabs
+│   │   ├── react-toast -> ../.pnpm/@radix-ui+react-toast@1.2.15_@types+react-dom@19.2.2_@types+react@19.2.2__@types+react@_ff3e4df2ef11d1d5035b7eb022de636a/node_modules/@radix-ui/react-toast
+│   │   ├── react-toggle -> ../.pnpm/@radix-ui+react-toggle@1.1.10_@types+react-dom@19.2.2_@types+react@19.2.2__@types+react_f4bd7f3824ab372e57ec11e2a5b4b1d2/node_modules/@radix-ui/react-toggle
+│   │   ├── react-toggle-group -> ../.pnpm/@radix-ui+react-toggle-group@1.1.11_@types+react-dom@19.2.2_@types+react@19.2.2__@types_5ff2b9a279f97d64bbd20758ae8817d7/node_modules/@radix-ui/react-toggle-group
+│   │   └── react-tooltip -> ../.pnpm/@radix-ui+react-tooltip@1.2.8_@types+react-dom@19.2.2_@types+react@19.2.2__@types+react_707d0f376e9cdde0b32333dbd84e587f/node_modules/@radix-ui/react-tooltip
+│   ├── @supabase
+│   │   └── supabase-js -> ../.pnpm/@supabase+supabase-js@2.75.0/node_modules/@supabase/supabase-js
+│   ├── @tailwindcss
+│   │   └── postcss -> ../.pnpm/@tailwindcss+postcss@4.1.14/node_modules/@tailwindcss/postcss
+│   ├── @tanstack
+│   │   └── react-query -> ../.pnpm/@tanstack+react-query@5.90.3_react@19.1.0/node_modules/@tanstack/react-query
+│   ├── @testing-library
+│   │   ├── jest-dom -> ../.pnpm/@testing-library+jest-dom@6.9.1/node_modules/@testing-library/jest-dom
+│   │   ├── react -> ../.pnpm/@testing-library+react@16.3.0_@testing-library+dom@10.4.1_@types+react-dom@19.2.2_@type_2bb59ef5f357afe1ae57b469d11fc0d9/node_modules/@testing-library/react
+│   │   └── user-event -> ../.pnpm/@testing-library+user-event@14.6.1_@testing-library+dom@10.4.1/node_modules/@testing-library/user-event
+│   ├── @trpc
+│   │   ├── client -> ../.pnpm/@trpc+client@11.6.0_@trpc+server@11.6.0_typescript@5.9.3__typescript@5.9.3/node_modules/@trpc/client
+│   │   ├── next -> ../.pnpm/@trpc+next@11.6.0_@tanstack+react-query@5.90.3_react@19.1.0__@trpc+client@11.6.0_@trpc+_b3ab80c17700325a20c930f41f8f5186/node_modules/@trpc/next
+│   │   ├── react-query -> ../.pnpm/@trpc+react-query@11.6.0_@tanstack+react-query@5.90.3_react@19.1.0__@trpc+client@11.6.0_020abd31aa643a2094faba4a99523926/node_modules/@trpc/react-query
+│   │   └── server -> ../.pnpm/@trpc+server@11.6.0_typescript@5.9.3/node_modules/@trpc/server
+│   ├── @types
+│   │   ├── next-auth -> ../.pnpm/@types+next-auth@3.15.0_next@15.5.5_@babel+core@7.28.4_react-dom@19.1.0_react@19.1.0__r_3dadb2329609b6416c765c0aa4886a68/node_modules/@types/next-auth
+│   │   ├── node -> ../.pnpm/@types+node@20.19.21/node_modules/@types/node
+│   │   ├── pg -> ../.pnpm/@types+pg@8.15.5/node_modules/@types/pg
+│   │   ├── react -> ../.pnpm/@types+react@19.2.2/node_modules/@types/react
+│   │   └── react-dom -> ../.pnpm/@types+react-dom@19.2.2_@types+react@19.2.2/node_modules/@types/react-dom
+│   ├── @typescript-eslint
+│   │   ├── eslint-plugin -> ../.pnpm/@typescript-eslint+eslint-plugin@8.46.1_@typescript-eslint+parser@8.46.1_eslint@9.37.0__0e0d1ebf4875372526c2328a0ed82107/node_modules/@typescript-eslint/eslint-plugin
+│   │   └── parser -> ../.pnpm/@typescript-eslint+parser@8.46.1_eslint@9.37.0_jiti@1.21.7__typescript@5.9.3/node_modules/@typescript-eslint/parser
+│   ├── @vitejs
+│   │   └── plugin-react -> ../.pnpm/@vitejs+plugin-react@5.0.4_vite@7.1.10_@types+node@20.19.21_jiti@1.21.7_lightningcss@1.30.1_tsx@4.20.6_yaml@2.8.1_/node_modules/@vitejs/plugin-react
+│   ├── @vitest
+│   │   └── ui -> ../.pnpm/@vitest+ui@3.2.4_vitest@3.2.4/node_modules/@vitest/ui
+│   ├── autoprefixer -> .pnpm/autoprefixer@10.4.21_postcss@8.5.6/node_modules/autoprefixer
+│   ├── class-variance-authority -> .pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority
+│   ├── clsx -> .pnpm/clsx@2.1.1/node_modules/clsx
+│   ├── dotenv -> .pnpm/dotenv@17.2.3/node_modules/dotenv
+│   ├── drizzle-kit -> .pnpm/drizzle-kit@0.31.5/node_modules/drizzle-kit
+│   ├── drizzle-orm -> .pnpm/drizzle-orm@0.44.6_@types+pg@8.15.5_postgres@3.4.7/node_modules/drizzle-orm
+│   ├── drizzle-zod -> .pnpm/drizzle-zod@0.8.3_drizzle-orm@0.44.6_@types+pg@8.15.5_postgres@3.4.7__zod@4.1.12/node_modules/drizzle-zod
+│   ├── eslint -> .pnpm/eslint@9.37.0_jiti@1.21.7/node_modules/eslint
+│   ├── eslint-config-next -> .pnpm/eslint-config-next@15.5.5_eslint@9.37.0_jiti@1.21.7__typescript@5.9.3/node_modules/eslint-config-next
+│   ├── eslint-config-prettier -> .pnpm/eslint-config-prettier@10.1.8_eslint@9.37.0_jiti@1.21.7_/node_modules/eslint-config-prettier
+│   ├── eslint-plugin-import -> .pnpm/eslint-plugin-import@2.32.0_@typescript-eslint+parser@8.46.1_eslint@9.37.0_jiti@1.21.7__3b3ce7b1a9c58df9bba9340be0ff5f32/node_modules/eslint-plugin-import
+│   ├── eslint-plugin-jsx-a11y -> .pnpm/eslint-plugin-jsx-a11y@6.10.2_eslint@9.37.0_jiti@1.21.7_/node_modules/eslint-plugin-jsx-a11y
+│   ├── eslint-plugin-prettier -> .pnpm/eslint-plugin-prettier@5.5.4_eslint-config-prettier@10.1.8_eslint@9.37.0_jiti@1.21.7____b6b8f3bc329b185192e8362fb9c92beb/node_modules/eslint-plugin-prettier
+│   ├── eslint-plugin-react-hooks -> .pnpm/eslint-plugin-react-hooks@7.0.0_eslint@9.37.0_jiti@1.21.7_/node_modules/eslint-plugin-react-hooks
+│   ├── eslint-plugin-unused-imports -> .pnpm/eslint-plugin-unused-imports@4.2.0_@typescript-eslint+eslint-plugin@8.46.1_@typescript-_a59a6f53c67ff0c28cb1e3aead0b633b/node_modules/eslint-plugin-unused-imports
+│   ├── husky -> .pnpm/husky@8.0.3/node_modules/husky
+│   ├── jsdom -> .pnpm/jsdom@27.0.0_postcss@8.5.6/node_modules/jsdom
+│   ├── lint-staged -> .pnpm/lint-staged@16.2.4/node_modules/lint-staged
+│   ├── lru-cache -> .pnpm/lru-cache@11.2.2/node_modules/lru-cache
+│   ├── lucide-react -> .pnpm/lucide-react@0.545.0_react@19.1.0/node_modules/lucide-react
+│   ├── next -> .pnpm/next@15.5.5_@babel+core@7.28.4_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next
+│   ├── next-auth -> .pnpm/next-auth@4.24.11_next@15.5.5_@babel+core@7.28.4_react-dom@19.1.0_react@19.1.0__react@1_0c7f34787a05930ea7ef3799ac7a5e83/node_modules/next-auth
+│   ├── next-intl -> .pnpm/next-intl@4.4.0_next@15.5.5_@babel+core@7.28.4_react-dom@19.1.0_react@19.1.0__react@19._32fd2cfe81858e0e8c88abd512f894d1/node_modules/next-intl
+│   ├── openai -> .pnpm/openai@6.3.0_ws@8.18.3_zod@4.1.12/node_modules/openai
+│   ├── postcss -> .pnpm/postcss@8.5.6/node_modules/postcss
+│   ├── postgres -> .pnpm/postgres@3.4.7/node_modules/postgres
+│   ├── prettier -> .pnpm/prettier@3.6.2/node_modules/prettier
+│   ├── react -> .pnpm/react@19.1.0/node_modules/react
+│   ├── react-dom -> .pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom
+│   ├── react-hook-form -> .pnpm/react-hook-form@7.65.0_react@19.1.0/node_modules/react-hook-form
+│   ├── superjson -> .pnpm/superjson@2.2.2/node_modules/superjson
+│   ├── tailwind-merge -> .pnpm/tailwind-merge@3.3.1/node_modules/tailwind-merge
+│   ├── tailwindcss -> .pnpm/tailwindcss@3.4.18_tsx@4.20.6_yaml@2.8.1/node_modules/tailwindcss
+│   ├── tsx -> .pnpm/tsx@4.20.6/node_modules/tsx
+│   ├── tw-animate-css -> .pnpm/tw-animate-css@1.4.0/node_modules/tw-animate-css
+│   ├── typescript -> .pnpm/typescript@5.9.3/node_modules/typescript
+│   ├── vitest -> .pnpm/vitest@3.2.4_@types+node@20.19.21_@vitest+ui@3.2.4_jiti@1.21.7_jsdom@27.0.0_postcss@8.5_6dec6473745776f5b1b5fa783f953c69/node_modules/vitest
+│   └── zod -> .pnpm/zod@4.1.12/node_modules/zod
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.js
+├── public
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── locales
+│   │   ├── backup
+│   │   ├── en.json
+│   │   ├── hi.json
+│   │   ├── ja.json
+│   │   ├── ko.json
+│   │   ├── zh-CN.json
+│   │   └── zh-TW.json
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── scripts
+│   ├── check-env.ts
+│   ├── test-db-operations.ts
+│   ├── test-db-simple.ts
+│   └── test-db.ts
+├── tailwind.config.ts
+├── tree_structure.txt
+├── tsconfig.json
+├── tsconfig.tsbuildinfo
+└── vitest.config.ts
+
+137 directories, 71 files

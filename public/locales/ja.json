@@ -1,0 +1,115 @@
+{
+  "common": {
+    "search": "検索",
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "submit": "送信",
+    "next": "次へ",
+    "previous": "前へ",
+    "confirm": "確認"
+  },
+  "HomePage": {
+    "title": "不動産プラットフォーム",
+    "description": "理想の物件を見つけましょう",
+    "roleHint": "閲覧を始めると見込み入居者になります — あなたの旅はひとつの検索から始まります。"
+  },
+  "Navigation": {
+    "home": "ホーム",
+    "dashboard": "ダッシュボード",
+    "properties": "物件"
+  },
+  "LanguageSelector": {
+    "placeholder": "言語を選択"
+  },
+  "navigation": {
+    "home": "ホーム",
+    "properties": "物件",
+    "dashboard": "ダッシュボード",
+    "favorites": "お気に入り",
+    "messages": "メッセージ",
+    "language": "言語"
+  },
+  "home": {
+    "title": "理想の物件を見つけよう",
+    "subtitle": "台湾各地のアパート、住宅、商業施設を探す",
+    "findProperties": "物件を探す",
+    "goToDashboard": "ダッシュボードへ"
+  },
+  "property": {
+    "search": {
+      "title": "理想の物件を見つけよう",
+      "subtitle": "アパート、住宅、商業施設を探す",
+      "resultsWillAppearHere": "検索結果がここに表示されます",
+      "placeholder": "物件を検索...",
+      "location": "場所",
+      "selectLocation": "場所を選択",
+      "minPrice": "最低価格",
+      "maxPrice": "最高価格",
+      "propertyType": "物件タイプ",
+      "selectPropertyType": "物件タイプを選択"
+    },
+    "locations": {
+      "taipei": "台北市",
+      "newTaipei": "新北市",
+      "taoyuan": "桃園市",
+      "taichung": "台中市",
+      "kaohsiung": "高雄市"
+    },
+    "propertyTypes": {
+      "any": "すべてのタイプ",
+      "apartment": "アパート",
+      "house": "住宅",
+      "studio": "スタジオ",
+      "commercial": "商業施設"
+    }
+  },
+  "dashboard": {
+    "title": "ダッシュボード",
+    "subtitle": "物件、お気に入り、メッセージを管理",
+    "sections": {
+      "properties": "物件",
+      "manageProperties": "登録物件の管理",
+      "favorites": "お気に入り",
+      "viewFavorites": "お気に入り物件を表示",
+      "messages": "メッセージ",
+      "manageMessages": "会話の管理"
+    }
+  },
+  "lease": {
+    "title": "賃貸契約",
+    "subtitle": "賃貸契約書を作成中",
+    "sections": {
+      "tenantInfo": "賃借人情報",
+      "leaseDetails": "賃貸詳細"
+    },
+    "form": {
+      "fullName": "氏名",
+      "fullNamePlaceholder": "氏名を入力",
+      "email": "メールアドレス",
+      "emailPlaceholder": "メールアドレスを入力",
+      "phoneNumber": "電話番号",
+      "phoneNumberPlaceholder": "電話番号を入力",
+      "leaseDuration": "賃貸期間",
+      "selectDuration": "期間を選択",
+      "months": "ヶ月",
+      "monthlyRent": "月額家賃",
+      "securityDeposit": "敷金",
+      "startDate": "契約開始日",
+      "agreeToTerms": "本賃貸契約の利用規約に同意します",
+      "signLease": "契約書に署名"
+    },
+    "errors": {
+      "fullNameRequired": "氏名を入力してください",
+      "emailRequired": "メールアドレスを入力してください",
+      "emailInvalid": "有効なメールアドレスを入力してください",
+      "rentRequired": "月額家賃を入力してください",
+      "agreeToTermsRequired": "利用規約に同意する必要があります",
+      "submissionFailed": "契約書の署名に失敗しました。再度お試しください"
+    }
+  }
+}

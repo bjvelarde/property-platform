@@ -1,5 +1,5 @@
 import { relations } from 'drizzle-orm';
-import { pgTable, text, timestamp, uuid, integer, boolean, jsonb } from 'drizzle-orm/pg-core';
+import { boolean, integer, jsonb, pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
 import { createInsertSchema } from 'drizzle-zod';
 import { z } from 'zod';
 
@@ -9,6 +9,8 @@ export const users = pgTable('users', {
   email: text('email').notNull().unique(),
   name: text('name'),
   avatarUrl: text('avatar_url'),
+  preferredLanguage: text('preferred_language').default('en'),
+  countryCode: text('country_code').default('HK'),
   createdAt: timestamp('created_at').defaultNow(),
   updatedAt: timestamp('updated_at').defaultNow(),
 });
@@ -19,6 +21,7 @@ export const profiles = pgTable('profiles', {
   userId: uuid('user_id').references(() => users.id, { onDelete: 'cascade' }),
   type: text('type').$type<'tenant' | 'landlord' | 'agent'>().notNull(),
   phone: text('phone'),
+  countryCode: text('country_code').default('HK'),
   bio: text('bio'),
   isActive: boolean('is_active').default(true),
   createdAt: timestamp('created_at').defaultNow(),
@@ -33,13 +36,26 @@ export const properties = pgTable('properties', {
   description: text('description'),
   address: text('address').notNull(),
   city: text('city').notNull(),
-  state: text('state').notNull(),
+  state: text('state'),
+  countryCode: text('country_code').notNull().default('HK'),
+  currency: text('currency').notNull().default('HKD'),
   zipCode: text('zip_code'),
+  latitude: text('latitude'),
+  longitude: text('longitude'),
+  propertyType: text('property_type')
+    .$type<'residential' | 'commercial' | 'hospitality' | 'mixed-use'>()
+    .default('residential'),
+  isCommercial: boolean('is_commercial').default(false),
   rentAmount: integer('rent_amount'),
   bedroomCount: integer('bedroom_count'),
   bathroomCount: integer('bathroom_count'),
   squareFeet: integer('square_feet'),
   amenities: jsonb('amenities').$type<string[]>().default([]),
+  businessName: text('business_name'), // For shops, offices, etc.
+  operatingHours: text('operating_hours'), // e.g., "10:00–22:00"
+  licenseNumber: text('license_number'), // For regulatory compliance
+  floorNumber: text('floor_number'), // Useful for malls, hotels
+  unitNumber: text('unit_number'), // e.g., "Shop 12A", "Room 305"
   images: jsonb('images').$type<string[]>().default([]),
   isActive: boolean('is_active').default(true),
   isAvailable: boolean('is_available').default(true),
@@ -103,10 +119,20 @@ export const insertPropertySchema = createInsertSchema(properties, {
   description: z.string().max(1000).optional(),
   address: z.string().min(1),
   city: z.string().min(1),
-  state: z.string().min(2).max(2),
+  state: z.string().min(2).max(2).optional(), // Make optional
+  countryCode: z.string().length(2), // Add validation
+  currency: z.string().length(3), // Add validation
   rentAmount: z.number().positive(),
   bedroomCount: z.number().int().positive(),
   bathroomCount: z.number().positive(),
+  latitude: z.string().optional(),
+  longitude: z.string().optional(),
+  propertyType: z.enum(['residential', 'commercial', 'hospitality', 'mixed-use']).optional(),
+  businessName: z.string().max(100).optional(),
+  operatingHours: z.string().max(100).optional(),
+  licenseNumber: z.string().max(50).optional(),
+  floorNumber: z.string().max(10).optional(),
+  unitNumber: z.string().max(20).optional(),
 });
 
 export type InsertProfile = z.infer<typeof insertProfileSchema>;

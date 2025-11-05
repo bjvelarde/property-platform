@@ -8,6 +8,20 @@
       "when": 1760514716210,
       "tag": "0000_curly_next_avengers",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1761464223979,
+      "tag": "0001_mute_arclight",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1762350443509,
+      "tag": "0002_fat_vector",
+      "breakpoints": true
     }
   ]
 }

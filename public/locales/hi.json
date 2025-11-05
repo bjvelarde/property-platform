@@ -1,0 +1,115 @@
+{
+  "common": {
+    "search": "खोजें",
+    "loading": "लोड हो रहा है...",
+    "error": "त्रुटि",
+    "success": "सफल",
+    "save": "सेव करें",
+    "cancel": "रद्द करें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "submit": "जमा करें",
+    "next": "अगला",
+    "previous": "पिछला",
+    "confirm": "पुष्टि करें"
+  },
+  "HomePage": {
+    "title": "प्रॉपर्टी प्लेटफ़ॉर्म",
+    "description": "अपनी आदर्श प्रॉपर्टी खोजें",
+    "roleHint": "ब्राउज़िंग शुरू करें और संभावित किरायेदार बनें — आपकी यात्रा एक खोज से शुरू होती है।"
+  },
+  "Navigation": {
+    "home": "होम",
+    "dashboard": "डैशबोर्ड",
+    "properties": "प्रॉपर्टी"
+  },
+  "LanguageSelector": {
+    "placeholder": "भाषा चुनें"
+  },
+  "navigation": {
+    "home": "होम",
+    "properties": "संपत्तियां",
+    "dashboard": "डैशबोर्ड",
+    "favorites": "पसंदीदा",
+    "messages": "संदेश",
+    "language": "भाषा"
+  },
+  "home": {
+    "title": "अपनी आदर्श संपत्ति खोजें",
+    "subtitle": "ताइवान भर में अपार्टमेंट, घर और वाणिज्यिक स्थान खोजें",
+    "findProperties": "संपत्तियां खोजें",
+    "goToDashboard": "डैशबोर्ड पर जाएं"
+  },
+  "property": {
+    "search": {
+      "title": "अपनी आदर्श संपत्ति खोजें",
+      "subtitle": "अपार्टमेंट, घर और वाणिज्यिक स्थान खोजें",
+      "resultsWillAppearHere": "खोज परिणाम यहां दिखाई देंगे",
+      "placeholder": "संपत्तियां खोजें...",
+      "location": "स्थान",
+      "selectLocation": "स्थान चुनें",
+      "minPrice": "न्यूनतम मूल्य",
+      "maxPrice": "अधिकतम मूल्य",
+      "propertyType": "संपत्ति प्रकार",
+      "selectPropertyType": "संपत्ति प्रकार चुनें"
+    },
+    "locations": {
+      "taipei": "ताइपे",
+      "newTaipei": "न्यू ताइपे",
+      "taoyuan": "ताओयुआन",
+      "taichung": "ताइचुंग",
+      "kaohsiung": "काओशियुंग"
+    },
+    "propertyTypes": {
+      "any": "कोई भी प्रकार",
+      "apartment": "अपार्टमेंट",
+      "house": "घर",
+      "studio": "स्टूडियो",
+      "commercial": "वाणिज्यिक"
+    }
+  },
+  "dashboard": {
+    "title": "डैशबोर्ड",
+    "subtitle": "अपनी संपत्तियों, पसंदीदा और संदेशों को प्रबंधित करें",
+    "sections": {
+      "properties": "संपत्तियां",
+      "manageProperties": "अपनी सूचीबद्ध संपत्तियों को प्रबंधित करें",
+      "favorites": "पसंदीदा",
+      "viewFavorites": "अपनी पसंदीदा संपत्तियां देखें",
+      "messages": "संदेश",
+      "manageMessages": "अपनी बातचीत प्रबंधित करें"
+    }
+  },
+  "lease": {
+    "title": "लीज एग्रीमेंट",
+    "subtitle": "आप इसके लिए लीज साइन कर रहे हैं",
+    "sections": {
+      "tenantInfo": "किरायेदार जानकारी",
+      "leaseDetails": "लीज विवरण"
+    },
+    "form": {
+      "fullName": "पूरा नाम",
+      "fullNamePlaceholder": "अपना पूरा नाम दर्ज करें",
+      "email": "ईमेल पता",
+      "emailPlaceholder": "अपना ईमेल दर्ज करें",
+      "phoneNumber": "फोन नंबर",
+      "phoneNumberPlaceholder": "अपना फोन नंबर दर्ज करें",
+      "leaseDuration": "लीज अवधि",
+      "selectDuration": "अवधि चुनें",
+      "months": "महीने",
+      "monthlyRent": "मासिक किराया",
+      "securityDeposit": "सुरक्षा जमा",
+      "startDate": "लीज प्रारंभ तिथि",
+      "agreeToTerms": "मैं इस लीज एग्रीमेंट की शर्तों और नियमों से सहमत हूं",
+      "signLease": "लीज साइन करें"
+    },
+    "errors": {
+      "fullNameRequired": "पूरा नाम आवश्यक है",
+      "emailRequired": "ईमेल आवश्यक है",
+      "emailInvalid": "कृपया एक वैध ईमेल पता दर्ज करें",
+      "rentRequired": "मासिक किराया आवश्यक है",
+      "agreeToTermsRequired": "आपको शर्तों और नियमों से सहमत होना होगा",
+      "submissionFailed": "लीज साइन करने में विफल। कृपया पुनः प्रयास करें"
+    }
+  }
+}
